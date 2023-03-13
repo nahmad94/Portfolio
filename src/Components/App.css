@@ -5,20 +5,16 @@ body {
   background-size: cover;
 }
 
-#social {
-  align-items: right;
+.nav {
+  background-color: white;
 }
 
-#welcome_head {
-  display: flex;
-  text-align: center;
-  width: auto;
-  height: auto;   
-}
 
-.welcome {
-  font-size: smaller;
-}
+
+
+
+
+
 
 #my_pic {
   align-items: left;
@@ -27,10 +23,6 @@ body {
 
 #connect_message {
   text-align: center;
-}
-
-.navbar {
-  background-color: white;
 }
 
 @media screen and (max-width: 800px) {

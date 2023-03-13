@@ -6,23 +6,42 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Header() {
   return (
-    <Navbar expand='med' fixed='top'>
-      <Container className='navbar' >
-        <Navbar.Brand>
-          <img src='./Pics/logo.png' />
-        </Navbar.Brand>
-        {/* <Navbar.Toggle className='toggle' aria-controls='basic-navbar-nav' /> */}
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
-            <Nav.Link>Home</Nav.Link>
-            <Nav.Link>Projects</Nav.Link>
-            <Nav.Link>Resume</Nav.Link>
-            <Nav.Link>Contact</Nav.Link>
-            <Nav.Link>Social</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+    <nav className='nav'>
+      <a className='navbar-brand'>
+        <img src='' />
+        <div>Naveed</div>
+      </a>
+      <button className='toggle'>
+        <span></span>
+      </button>
+      <div className='navbar collapse'>
+        <div className='navbar-nav'>
+          <a className='link'>Home</a>
+          <a className='link'>Projects</a>
+          <a className='link'>Resume</a>
+          <a className='link'>Contact</a>
+        </div>
+      </div>
+    </nav>
+
+
+    // <Navbar expand='med' fixed='top'>
+    //   <Container className='navbar' >
+    //     <Navbar.Brand>
+    //       <img src='./Pics/logo.png' />
+    //     </Navbar.Brand>
+    //     <Navbar.Toggle className='toggle' aria-controls='basic-navbar-nav' />
+    //     <Navbar.Collapse id='basic-navbar-nav'>
+    //       <Nav className='me-auto'>
+    //         <Nav.Link>Home</Nav.Link>
+    //         <Nav.Link>Projects</Nav.Link>
+    //         <Nav.Link>Resume</Nav.Link>
+    //         <Nav.Link>Contact</Nav.Link>
+    //         <Nav.Link>Social</Nav.Link>
+    //       </Nav>
+    //     </Navbar.Collapse>
         
-      </Container>
-    </Navbar>
+    //   </Container>
+    // </Navbar>
   )
 }
