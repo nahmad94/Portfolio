@@ -4,12 +4,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { HashLink } from 'react-router-hash-link';
+import logo from '../Pics/logo.png'
 
 export default function Header() {
   return (
     <nav className='nav'>
       <a className='navbar-brand'>
-        <img src='' />
+        <img src={logo} />
         <div>Naveed</div>
       </a>
       <button className='toggle'>
