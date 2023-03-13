@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Header() {
   return (
@@ -16,10 +17,10 @@ export default function Header() {
       </button>
       <div className='navbar collapse'>
         <div className='navbar-nav'>
-          <a className='link'>Home</a>
-          <a className='link'>Projects</a>
-          <a className='link'>Resume</a>
-          <a className='link'>Contact</a>
+          <HashLink smooth to='/#home' className='nav-link'>Home</HashLink>
+          <HashLink smooth to='/#projects' className='nav-link'>Projects</HashLink>
+          <HashLink smooth to='/#resume' className='nav-link'>Resume</HashLink>
+          <HashLink smooth to='/#contact' className='nav-link'>Contact</HashLink>
         </div>
       </div>
     </nav>
