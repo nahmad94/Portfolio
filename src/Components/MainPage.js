@@ -10,6 +10,15 @@ export default function MainPage() {
         <section id='home'>
             <Home />
         </section>
+        <section id='projects'>
+            <Projects />
+        </section>
+        <section id='resume'>
+            <Resume />
+        </section>
+        <section id='contact'>
+            <Contact />
+        </section>
     </div>
   )
 }
